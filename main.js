@@ -11,7 +11,7 @@ let message;
 function verification_word(utente) {
 
    
-    const palindrome_word = utente.split("").reverse().join("");
+    let palindrome_word = utente.split("").reverse().join("");
     
     if (palindrome_word == utente) {
         return true 
@@ -32,21 +32,38 @@ if (palindrome_word) {
 alert(message);
 
 
-
-
-
-
-
-
 //Pari e Dispari
 //L’utente sceglie pari o dispari e inserisce un numero da 1 a 5. Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione). 
 //Sommiamo i due numeri Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione) Dichiariamo chi ha vinto.
+let pari_dispari = prompt('scegli pari o dispari');
+
+let player = Number(prompt('Inserisci un numero da 1 a 5:'));
+
+let pc_player = Math.floor((Math.random() * 5) + 1);
+
+let number = sum(player, pc_player)
+
+function even_odd(e){
+    if (e%2 == 0){
+        return true
+    }
+
+    return false
+}
+
+function sum(x,y){
+    return Number(x+y)
+}
+
+function calculator_win(e, number){
+  let dado = even_odd(e);
+  if (player == 'pari')
+  
+
+}
 
 
-
-
-
-
+document.writeln(calculator_win(even_odd, number))
 
 
 
