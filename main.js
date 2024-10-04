@@ -55,15 +55,13 @@ function sum(x,y){
     return Number(x+y)
 }
 
-function calculator_win(e, number){
-  let dado = even_odd(e);
-  if (player == 'pari')
+function calculator_win(){
+
+  
   
 
 }
 
-
-document.writeln(calculator_win(even_odd, number))
 
 
 
